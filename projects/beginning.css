@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c5daed;
+    color: #506578;
+    font-size: medium;
+}
+h2 {
+    color:#373F51;
+
+}
+header {
+    color: #FE5F55;
+    
+    
+}
+#absolute {
+    color: #373F51;
+    font-style: italic;
+
+}
+.relative {
+    color: #616ddb;
+    font-style: italic;
+}
+    .highlight {
+      background-color: #fcb5af;
+      font-weight: bold;
+      font-style: italic;
+      color: #373F51;
+    }
+.emphasize {
+    color: #FE5F55;
+}
+
+.boring {
+    color: #506578;
+}
