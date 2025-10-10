@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header {
+    background-color: rgb(112, 185, 148);
+    padding: 25px;
+    border-style: solid;
+    border-color: rgb(54, 107, 75);
+    border-width: 5px;
+
+
+}
+nav {
+    background-color:  rgb(248, 235, 154);
+    border: thin solid rgb(154, 146, 2);
+    padding: 15px;
+    margin: 10px
+
+}
+header h1{
+    background-color: rgb(186, 248, 193);
+    
+}
+main h1 {
+    background-color:rgb(248, 235, 154);
+    padding: 20px;
+    border: thin solid rgb(154, 146, 2);
+}
+main p{
+   border: thin dashed rgb(59, 107, 76) 
+}
+)
