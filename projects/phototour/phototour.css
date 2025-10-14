@@ -19,3 +19,7 @@ header{
     background-repeat: repeat;
     background-color: rgb(107, 159, 255);
 }
+a.active {
+  color: rgb(255, 217, 0);
+  font-weight: bold;
+}
