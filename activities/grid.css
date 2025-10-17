@@ -1,0 +1,31 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.parent {
+    display:grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    gap: 10px;
+}
+.child {
+    background-color: rgb(191, 146, 234);
+}
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "lside main rside"
+        "footer footer footer";
+}
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+main {
+    grid-area: main;
+}
+nav {
+    grid-area: lside;
+}
