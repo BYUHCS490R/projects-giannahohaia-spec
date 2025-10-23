@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1c1c1c;
+    color: #eaeaea;
+    margin: 0;
+}
+
+header {
+    background-color: #ff3b30;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.7); 
+}
+
+header h1 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.7);
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    display: flex;               
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: #ff3b30;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.content {
+    display: flex;               
+    margin: 20px;
+}
+
+aside {
+    width: 25%;
+    padding: 15px;
+    background-color: #262626;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+main {
+    flex: 1;
+    padding: 15px 25px;
+}
+
+.cardgrid {
+    display: grid;              
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #2f2f2f;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5); 
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    color: #ff3b30;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+footer {
+    background-color: #111;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+   
+}
+
+.grid {
+    display: grid;               
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.grid a {
+    color: #ff3b30;
+    display: block;
+}
+
+.grid a:hover {
+    color: white;
+}
+
+
+
