@@ -35,8 +35,8 @@ nav a:hover {
     background-color: white;
     color: brown;
 }
-.mainrow{
-    width: 200px;
+.mainrow {
+    display: flex;
 }
 .sidebar {
     width: 200px;
@@ -49,5 +49,27 @@ margin: 5px;
 }
 .card img {
     width: 100%;
+}
+.row {
+    display:flex;
+    flex-flow: row wrap;
+}
+@media ONLY screen AND (max-width: 600px) {
+
+}
+    
+@media ONLY screen AND (max-width: 550px) {
+    nav {
+        flex-direction:column;
+    }
+    .mainrow {
+        flex-direction:column-reverse;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main-card {
+        order: -1;
+    }
 }
 
