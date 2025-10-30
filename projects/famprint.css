@@ -1,0 +1,23 @@
+nav {
+    display: none;
+}
+
+body, 
+header, 
+footer,
+.sidebar, 
+.card {
+    background-color: white; 
+    color: black;
+    box-shadow: none; 
+}
+
+.mainrow,
+.row {
+    display: block;
+}
+
+.sidebar, 
+main {
+    width: 100%;
+}
