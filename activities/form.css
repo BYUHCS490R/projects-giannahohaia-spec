@@ -1,0 +1,62 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-row {
+    display: flex;
+    gap: 10px; 
+    margin: 15px 0; 
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150 px;
+    text-align: right;
+}
+
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 8 px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque; }
+
+.form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
+        background-color: bisque;
+    }
+.form-row input[type='submit'] {
+background-color: rgb(16, 105, 44);
+color: white;
+padding: 5 px 20 px;
+border-radius: 3 px;
+}
+
+
+.check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0; 
+}
+fieldset {
+    background-color: rgb(196, 241, 210);
+    width: 80%;
+    border-radius: 10 px;
+    color: rgb(16, 105, 44);
+    border-color: rgb(16, 105, 44);
+}
+legend {
+    background-color: rgb(16, 105, 44);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+}
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
