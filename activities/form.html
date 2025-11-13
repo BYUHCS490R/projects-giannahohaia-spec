@@ -3,66 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <header>
-        <h1>Gia's Website</h1>
+    <header class="site-header">
+        <h1>Sign Up</h1>
     </header>
+
     <main>
-        <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+        <form action="#" method="post">
             <fieldset>
-                <legend> Sign Up </legend>
-                <div class="form-row"></div>
+                <legend> User Details </legend>
+                
+                <div class="form-row">
                     <label for="fname">Full Name:</label>
-                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                    <input type="text" name="fullname" id="fname" required>
                 </div>
-                <div class="form-row"></div>
-                    <label for="lname">Email:</label>
-                    <input type="email" name="fullname" placeholder="your@email.com" id="fname">
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="useremail" id="email" required>
                 </div>
-                <div class="form-row"></div>
-                    Password: <input type="password" name="pass">
+                
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="userpass" id="password" required>
                 </div>
+
+                <div class="form-row">
+                    <label for="dob">Birth Date:</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+
                 <div class="form-row">
                     <label for="state">State:</label>
                     <select name="state" id="state">
-                        <option value="blank">---</option>
+                        <option value="">---</option>
                         <option value="CA">California</option>
-                        <option value="UT">Utah</option>
                         <option value="TX">Texas</option>
                     </select>
                 </div>
+
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="a" required>Male</label>
+                        <label><input type="radio" name="gender" value="b">Female</label>
+                    </div>
+                </div>
+                
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox"> I agree to the terms.</label>
+                    <label class="checkbox-label"><input type="checkbox" required> Agree to terms</label>
                 </div>
-                <div class="check-row">
-                <div class="spacer">Gender:</div>
-                    <label><input type="radio" name="gender" value="Male">Male</label>
-                    <label><input type="radio" name="gender" value="Male">Male</label>
-                </div>
-                <div class= "form-row"></div>
+                
+                <div class="form-row textarea-row">
                     <label for="comment">Comments:</label>
-                    <textarea name="comment" id="comment">Hello</textarea>
+                    <textarea name="comment" id="comment" placeholder="Your notes..."></textarea>
                 </div>
-                <div class="form-row">
+                
+                <div class="form-row submit-row">
                     <div class="spacer"></div>
-                    <input type="submit" value="Sign Up">
+                    <input type="submit" value="Submit">
                 </div>
             </fieldset>
-    
-            
-        
         </form>
-        <br>
-        
     </main>
-    <footer>
-        &copy; 2025 Gianna Hohaia All Rights Reserved.
+
+    <footer class="site-footer">
+        &copy; 2025 Gianna Hohaia All Rights Reserved 
     </footer>
-    
 </body>
 </html>
