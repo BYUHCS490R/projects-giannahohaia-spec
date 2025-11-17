@@ -12,13 +12,15 @@
     </header>
 
     <main>
-        <form action="#" method="post">
+        <div id="message"></div> 
+
+        <form action="" method="post" id="myForm"> 
             <fieldset>
                 <legend> User Details </legend>
                 
                 <div class="form-row">
-                    <label for="fname">Full Name:</label>
-                    <input type="text" name="fullname" id="fname" required>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
                 </div>
 
                 <div class="form-row">
@@ -74,5 +76,47 @@
     <footer class="site-footer">
         &copy; 2025 Gianna Hohaia All Rights Reserved 
     </footer>
+    
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert("Form Submitted");
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value; 
+            const dob = document.getElementById('dob').value; 
+
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+        
+            const formData = { 
+                name: fullname, 
+                email: email, 
+                password: password, 
+                dob: dob
+            };
+            
+            console.log(formData);
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true); 
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange=function() {
+                if (xhr.readyState === 4 && xhr.status ===200) {
+                    alert("Form submitted successfully");
+                    const response = JSON.parse(xhr.responseText);
+                    console.log(response);
+                    document.getElementById('myForm').innerHTML = '';
+                    document.getElementById('message').innerText = response.message;
+                } else if (xhr.readyState === 4) {
+                    alert("Error submitting form.");
+                }
+            };
+            xhr.send(null); 
+        });
+    </script>
 </body>
 </html>
