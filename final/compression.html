@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compression | Audio Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A guide to audio compression, explaining threshold, ratio, attack, and release.">
+</head>
+<body>
+
+    <header>
+        <h1>Audio Engineering Fundamentals</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="daw.html">Digital Audio Workstation</a>
+        <a href="eq.html">Equalization</a>
+        <a href="compression.html" class="current-page-link">Compression</a>
+        <a href="rvb.html">Reverb & Delay</a>
+        <a href="mic.html">Microphones</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="mainrow">
+        <aside class="sidebar">
+            <h3>Compressor Goals</h3>
+            <figure>
+                <img src="compression_graphic.png" alt="Graphic showing compression curve">
+                <figcaption>How compression reduces dynamic range.</figcaption>
+            </figure>
+            <ul>
+                <li>**Leveling:** Keeping volume consistent.</li>
+                <li>**Punch:** Emphasizing transients (initial hits).</li>
+                <li>**Sustain:** Making notes hold longer.</li>
+                <li>**Glue:** Making multiple tracks sound like one unit.</li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>Controlling Dynamics with Compression</h2>
+            
+            <p>**Compression** is the process of **reducing the dynamic range** of a signal, making the quietest parts louder and the loudest parts quieter. This results in a sound that is more consistent and controlled, helping it sit better in a busy mix.</p>
+            
+            <h3>The Four Core Parameters</h3>
+            
+            <ol>
+                <li>**Threshold:** The volume level at which the compressor begins to act.</li>
+                <li>**Ratio:** Determines *how much* the signal is reduced once it crosses the threshold (e.g., 4:1).</li>
+                <li>**Attack:** How quickly the compressor starts reducing gain.</li>
+                <li>**Release:** How quickly the compressor stops reducing gain.</li>
+            </ol>
+
+            <p class="ref-text">Fast attack times are often used on drums (especially snares) to "grab" the transient quickly, while slower attacks allow the transient to pass through, preserving the punch. This timing is critical to the perceived feel of the mix. <a href="https://www.youtube.com/watch?v=EXAMPLE_COMPRESSION_VIDEO_ID#t=1m45s" target="_blank">YouTube: Compression Attack/Release Tutorial</a> (Reference 4 of 5).</p>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2025 Gianna Hohaia All Rights Reserved.
+    </footer>
+</body>
+</html>

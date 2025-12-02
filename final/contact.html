@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact an Engineer | Audio Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Contact us with questions about Digital Audio Workstations, Equalization, Compression, or Microphones.">
+</head>
+<body>
+
+    <header>
+        <h1>Audio Engineering Fundamentals</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="daw.html">Digital Audio Workstation</a>
+        <a href="eq.html">Equalization</a>
+        <a href="compression.html">Compression</a>
+        <a href="rvb.html">Reverb & Delay</a>
+        <a href="mic.html">Microphones</a>
+        <a href="contact.html" class="current-page-link">Contact</a>
+    </nav>
+
+    <div class="mainrow">
+        <aside class="sidebar">
+            <h3>Contact Information</h3>
+            <p>I check emails daily. For urgent requests related to BYUH Media Productions, please contact me through our internal Slack channel.</p>
+        </aside>
+        
+        <main>
+            <h2>Ask an Engineer a Question (Required Form)</h2>
+            <p>Use the form below to submit your questions regarding audio techniques or gear recommendations.</p>
+
+            <form action="process_form.php" method="POST" class="contact-form">
+                <fieldset>
+                    <legend>Your Inquiry</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email (for response):</label>
+                        <input type="email" id="email" name="email" required placeholder="name@domain.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="topic">Topic of Question:</label>
+                        <select id="topic" name="topic" required>
+                            <option value="">-- Select Topic --</option>
+                            <option value="eq">Equalization (EQ)</option>
+                            <option value="comp">Compression</option>
+                            <option value="mic">Microphones/Gear</option>
+                            <option value="other">Other/General DAW</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question">Your Question:</label>
+                        <textarea id="question" name="question" rows="5" required placeholder="What is the difference between an attack and a release time?"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Sign me up for the weekly audio tip newsletter.</label>
+                    </div>
+
+                    <div class="form-group submit-group">
+                        <button type="submit">Submit Question</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2025 Gianna Hohaia All Rights Reserved.
+    </footer>
+</body>
+</html>
