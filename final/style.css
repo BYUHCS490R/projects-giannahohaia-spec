@@ -1,20 +1,7 @@
-/* Project: Audio Engineering Fundamentals
-    Author: Gianna Hohaia
-    File: style.css (DEEP ESPRESSO & VINTAGE GOLD THEME)
-*/
-
-/* -------------------------------------------
-    0. Global Reset & New Theme Colors
-    -------------------------------------------
-*/
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #3c2f2f; /* Deep Espresso background */
-    color: #f0f0f0; /* Creamy light text */
+    background-color: #3c2f2f;
+    color: #f0f0f0; 
     margin: 0;
     line-height: 1.6;
     display: flex;
@@ -22,16 +9,12 @@ body {
     min-height: 100vh;
 }
 
-/* -------------------------------------------
-    1. Header and Footer
-    -------------------------------------------
-*/
 header {
-    background-color: #ffd700; /* Creamy Gold Accent */
-    color: #3c2f2f; /* Dark text on bright header */
+    background-color: #ffd700; 
+    color: #3c2f2f; 
     padding: 15px;
     text-align: center;
-    border-bottom: 5px solid #a34343; /* Deep Red trim */
+    border-bottom: 5px solid #a34343;
 }
 header h1 {
     margin: 0;
@@ -39,21 +22,17 @@ header h1 {
 }
 
 footer {
-    background-color: #282020; /* Darker bottom panel */
-    color: #ffd700; /* Gold text */
+    background-color: #282020; 
+    color: #ffd700; 
     text-align: center;
     padding: 12px;
     margin-top: auto; 
 }
 
-/* -------------------------------------------
-    2. Navigation Styles
-    -------------------------------------------
-*/
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #a34343; /* Deep Red/Burgundy Secondary */
+    background-color: #a34343; 
     flex-wrap: wrap; 
 }
 nav a {
@@ -66,24 +45,20 @@ nav a {
     border: 1px solid transparent;
 }
 nav a:hover {
-    background-color: #ffd700; /* Highlight with Gold */
-    color: #3c2f2f; /* Dark text on Gold */
+    background-color: #ffd700; 
+    color: #3c2f2f; 
 }
-/* REQUIRED: Highlight the current page */
-nav a.current-page-link {
-    background-color: #3c2f2f; /* Dark background */
-    color: #ffd700; /* Gold text */
+
+nav a.current {
+    background-color: #3c2f2f; 
+    color: #ffd700; 
     border-color: #ffd700;
 }
-nav a.current-page-link:hover {
+nav a.current:hover {
     background-color: #3c2f2f;
     color: #ffd700;
 }
 
-/* -------------------------------------------
-    3. Layout Structure
-    -------------------------------------------
-*/
 .mainrow {
     display: flex;
     flex-wrap: wrap;
@@ -98,23 +73,37 @@ nav a.current-page-link:hover {
 .sidebar {
     width: 25%;
     padding: 15px;
-    background-color: #4b3c3c; /* Lighter wood panel for contrast */
+    background-color: #4b3c3c;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-right: 3px solid #ffd700; /* Gold accent line */
-}
-.sidebar img {
-    width: 100%;
-    border: 2px solid #a34343; /* Red frame */
-}
-.sidebar h3 {
-    color: #ffd700; /* Gold for sidebar headers */
-    margin-top: 0;
-}
-.sidebar ul {
-    padding-left: 20px;
-    line-height: 1.6;
+    border: 3px solid #ffd700; 
 }
 
-main {
-    flex: 1;
+.datatable{
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+
+.batting-data caption {
+    padding: 8px;
+    font-weight: bold;
+    caption-side: top;
+}
+
+.datatable{
+    background-color: #251d0f;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc
+}
+
+.datatable td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.datatable tbody tr:nth-child(even) {
+    background-color: #a34343; 
+}

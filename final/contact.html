@@ -20,47 +20,42 @@
         <a href="compression.html">Compression</a>
         <a href="rvb.html">Reverb & Delay</a>
         <a href="mic.html">Microphones</a>
-        <a href="contact.html" class="current-page-link">Contact</a>
+        <a href="contact.html" class="current">Contact</a>
     </nav>
 
     <div class="mainrow">
-        <aside class="sidebar">
-            <h3>Contact Information</h3>
-            <p>I check emails daily. For urgent requests related to BYUH Media Productions, please contact me through our internal Slack channel.</p>
-        </aside>
         
         <main>
-            <h2>Ask an Engineer a Question (Required Form)</h2>
-            <p>Use the form below to submit your questions regarding audio techniques or gear recommendations.</p>
+            <h2>Ask an Audio Engineer a Question!</h2>
+            <p>Use the form below to submit your audio questions or gear recommendations.</p>
 
-            <form action="process_form.php" method="POST" class="contact-form">
+            <form action="confirm.html" method="GET" class="contactForm" id="contactForm">
                 <fieldset>
-                    <legend>Your Inquiry</legend>
                     
                     <div class="form-group">
                         <label for="fullName">Full Name:</label>
-                        <input type="text" id="fullName" name="fullName" required placeholder="Your Name">
+                        <input type="text" id="fullName" name="fullName" required placeholder="Full Name">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email (for response):</label>
-                        <input type="email" id="email" name="email" required placeholder="name@domain.com">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="name@email.com">
                     </div>
 
                     <div class="form-group">
                         <label for="topic">Topic of Question:</label>
                         <select id="topic" name="topic" required>
                             <option value="">-- Select Topic --</option>
-                            <option value="eq">Equalization (EQ)</option>
-                            <option value="comp">Compression</option>
+                            <option value="daw">DAW Editing/Recording</option>
+                            <option value="mix">Mixing</option>
                             <option value="mic">Microphones/Gear</option>
-                            <option value="other">Other/General DAW</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
                         <label for="question">Your Question:</label>
-                        <textarea id="question" name="question" rows="5" required placeholder="What is the difference between an attack and a release time?"></textarea>
+                        <textarea id="question" name="question" rows="5" required placeholder="What is the difference between attack and release time?"></textarea>
                     </div>
                     
                     <div class="form-group checkbox-group">
@@ -69,7 +64,7 @@
                     </div>
 
                     <div class="form-group submit-group">
-                        <button type="submit">Submit Question</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </fieldset>
             </form>
@@ -79,5 +74,7 @@
     <footer>
         &copy; 2025 Gianna Hohaia All Rights Reserved.
     </footer>
+    
+    <script src="form.js"></script> 
 </body>
 </html>

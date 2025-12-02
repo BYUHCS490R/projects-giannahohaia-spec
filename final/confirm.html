@@ -16,72 +16,20 @@
         <a href="home.html">Home</a>
         <a href="daw.html">Digital Audio Workstation</a>
         <a href="eq.html">Equalization</a>
-        <a href="compression.html" class="current-page-link">Compression</a>
+        <a href="compression.html" class="current">Compression</a>
         <a href="rvb.html">Reverb & Delay</a>
         <a href="mic.html">Microphones</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="mainrow">
-        <aside class="sidebar">
-            <h3>Thank You!</h3>
-            <p>We appreciate your interest in audio engineering fundamentals.</p>
-        </aside>
-        
         <main>
-            <h2>Thank You for Your Inquiry!</h2>
+            <h2>Thank You!</h2>
             
-            <p>Your request has been successfully received. We will review your question and respond to your email shortly.</p>
-            
-            <h3>Information Submitted: (REQUIRED: Server-Side Output)</h3>
-            
-            <div class="submitted-data-display">
-                <p><strong>Full Name:</strong> [DATA HERE]</p>
-                <p><strong>Email:</strong> [DATA HERE]</p>
-                <p><strong>Topic:</strong> [DATA HERE]</p>
-                <p><strong>Your Question:</strong> [DATA HERE]</p>
-                <p><strong>Newsletter Subscription:</strong> [DATA HERE]</p>
-            </div>
-            
-            <p>Click <a href="index.html">here</a> to return to the home page.</p>
-        </main>
-    </div>
+            <p>Your request has been received successfully. We will review your question and respond to your email shortly.</p>
+            <br>
 
     <footer>
         &copy; 2025 Gianna Hohaia All Rights Reserved.
     </footer>
-
-    <script>
-        // This script extracts the data from the URL (passed by process_form.php) and prints it.
-        const params = new URLSearchParams(window.location.search);
-        
-        const name = params.get('name') || 'N/A';
-        const email = params.get('email') || 'N/A';
-        const topic = params.get('topic') || 'N/A';
-        const question = params.get('q') || 'N/A';
-        const news = params.get('news') || 'No';
-
-        function getTopicName(code) {
-            switch(code) {
-                case 'eq': return 'Equalization (EQ)';
-                case 'comp': return 'Compression';
-                case 'mic': return 'Microphones/Gear';
-                case 'other': return 'Other/General DAW';
-                default: return 'General Inquiry';
-            }
-        }
-
-        const outputDiv = document.querySelector('.submitted-data-display');
-
-        if (outputDiv) {
-            outputDiv.innerHTML = `
-                <p><strong>Full Name:</strong> ${name}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Topic:</strong> ${getTopicName(topic)}</p>
-                <p><strong>Your Question:</strong> ${question}</p>
-                <p><strong>Newsletter Subscription:</strong> ${news}</p>
-            `;
-        }
-    </script>
 </body>
 </html>
