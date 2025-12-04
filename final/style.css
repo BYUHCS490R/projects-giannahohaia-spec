@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    background-color: #ffd700; 
-    color: #3c2f2f; 
+    background-color: #ffd700;
+    color: #3c2f2f;
     padding: 15px;
     text-align: center;
     border-bottom: 5px solid #a34343;
@@ -22,17 +22,17 @@ header h1 {
 }
 
 footer {
-    background-color: #282020; 
-    color: #ffd700; 
+    background-color: #282020;
+    color: #ffd700;
     text-align: center;
     padding: 12px;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #a34343; 
+    background-color: #a34343;
     flex-wrap: wrap; 
 }
 nav a {
@@ -45,12 +45,11 @@ nav a {
     border: 1px solid transparent;
 }
 nav a:hover {
-    background-color: #ffd700; 
-    color: #3c2f2f; 
+    background-color: #ffd700;
+    color: #3c2f2f;
 }
-
 nav a.current {
-    background-color: #3c2f2f; 
+    background-color: #3c2f2f;
     color: #ffd700; 
     border-color: #ffd700;
 }
@@ -79,31 +78,100 @@ nav a.current:hover {
     border: 3px solid #ffd700; 
 }
 
-.datatable{
+main {
+    width: 70%;
+    padding: 0 15px;
+}
+.datatable {
+    min-width: 600px;
     width: 100%;
     border-collapse: collapse; 
-    margin-top: 20px;
 }
-
-.batting-data caption {
+.datatable caption {
     padding: 8px;
     font-weight: bold;
     caption-side: top;
+    color: #ffd700;
 }
-
-.datatable{
+.datatable th, 
+.datatable td {
     background-color: #251d0f;
     color: white;
     padding: 10px;
     text-align: left;
-    border: 1px solid #ccc
+    border: 1px solid #5a5a5a;
 }
-
-.datatable td {
-    padding: 8px;
-    border: 1px solid #ccc;
-}
-
 .datatable tbody tr:nth-child(even) {
     background-color: #a34343; 
+}
+
+figure {
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.float-right-fig {
+    float: right;
+    max-width: 45%;
+    margin: 0 0 15px 20px;
+    clear: both;
+}
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    padding: 5px 0;
+    color: #cccccc;
+}
+main video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+.ref-text {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #cccccc;
+    display: block; 
+    clear: both; 
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    
+    .mainrow {
+        flex-direction: column;
+        width: 90%; 
+    }
+
+    .box,
+    main {
+        width: 100%;
+        padding: 15px 0; 
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-direction: column; 
+    }
+
+    nav a {
+        padding: 15px; 
+        text-align: center;
+        border-bottom: 1px solid #282020;
+    }
+    
+    .float-right-fig {
+        float: none; 
+        max-width: 100%;
+        margin: 10px auto;
+        display: block;
+    }
 }
