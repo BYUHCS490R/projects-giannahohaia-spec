@@ -23,47 +23,47 @@
         <a href="contact.html" class="current">Contact</a>
     </nav>
 
-    <div class="mainrow">
+    <div class="main-wrap">
         
         <main>
             <h2>Ask an Audio Engineer a Question!</h2>
             <p>Use the form below to submit your audio questions or gear recommendations.</p>
 
-            <form action="confirm.html" method="GET" class="contactForm" id="contactForm">
+            <form action="confirm.html" method="GET">
                 <fieldset>
                     
-                    <div class="form-group">
+                    <div>
                         <label for="fullName">Full Name:</label>
-                        <input type="text" id="fullName" name="fullName" required placeholder="Full Name">
+                        <input type="text" id="fullName" name="Full Name" required placeholder="Full Name">
                     </div>
 
-                    <div class="form-group">
+                    <div>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required placeholder="name@email.com">
                     </div>
 
-                    <div class="form-group">
+                    <div>
                         <label for="topic">Topic of Question:</label>
                         <select id="topic" name="topic" required>
                             <option value="">-- Select Topic --</option>
-                            <option value="daw">DAW Editing/Recording</option>
-                            <option value="mix">Mixing</option>
-                            <option value="mic">Microphones/Gear</option>
-                            <option value="other">Other</option>
+                            <option value="DAW Editing/Recording">DAW Editing/Recording</option>
+                            <option value="Mixing">Mixing</option>
+                            <option value="Microphones/Gear">Microphones/Gear</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                     
-                    <div class="form-group">
+                    <div>
                         <label for="question">Your Question:</label>
-                        <textarea id="question" name="question" rows="5" required placeholder="What is the difference between attack and release time?"></textarea>
+                        <textarea id="question" name="Question" rows="5" required placeholder="What is the difference between attack and release time?"></textarea>
                     </div>
                     
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <div>
+                        <input type="checkbox" id="newsletter" name="Newsletter" value="Yes">
                         <label for="newsletter">Sign me up for the weekly audio tip newsletter.</label>
                     </div>
 
-                    <div class="form-group submit-group">
+                    <div>
                         <button type="submit">Submit</button>
                     </div>
                 </fieldset>
@@ -75,6 +75,5 @@
         &copy; 2025 Gianna Hohaia All Rights Reserved.
     </footer>
     
-    <script src="form.js"></script> 
 </body>
 </html>

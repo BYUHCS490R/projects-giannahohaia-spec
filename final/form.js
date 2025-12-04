@@ -1,22 +1,20 @@
-document.getElementById('contactForm').addEventListener('submit', function (event) {
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const outputDiv = document.getElementById('submitted-data-output');
     
-    const fn = document.getElementById('fullName').value.trim();
-    const em = document.getElementById('email').value.trim();
-    const tp = document.getElementById('topic').value;
-    const qs = document.getElementById('question').value.trim();
-    
-    let msg = '';
+    if ([...urlParams.entries()].length === 0) {
+        outputDiv.innerHTML = '<p>No data found in the URL. Please ensure your contact form uses method="GET".</p>';
+        return;
+    }
 
-    if (fn === '' || em === '' || qs === '' || tp === '') {
-        msg += "Full Name, Email, Topic, and Question are required.\n";
-    }
-    
-    if (qs.length < 20) {
-        msg += "Question must be at least 20 characters long.\n";
-    }
-    
-    if (msg !== '') {
-        event.preventDefault();
-        alert("Form submission failed due to the following errors:\n\n" + msg);
-    }
+    const dataList = document.createElement('ul');
+
+    urlParams.forEach((value, key) => {
+        const formattedKey = key.charAt(0).toUpperCase() + key.slice(1).replace(/[-_]/g, ' ');
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<strong>${formattedKey}</strong>: ${decodeURIComponent(value)}`;
+        dataList.appendChild(listItem);
+    });
+
+    outputDiv.appendChild(dataList);
 });
